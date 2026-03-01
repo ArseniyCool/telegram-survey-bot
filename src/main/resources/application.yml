@@ -1,0 +1,16 @@
+telegram:
+  token: 8621055689:AAF2eZ-tOvXfjSWxXa3ZJQDRHqbZQWIJEVY
+
+#micronaut:
+#  security:
+#    oauth2:
+#      clients:
+#        google:
+#          client-id: your-client-id
+#          client-secret: your-client-secret
+#          openid:
+#            issuer: https://accounts.google.com
+
+micronaut:
+  server:
+    port: 8080
