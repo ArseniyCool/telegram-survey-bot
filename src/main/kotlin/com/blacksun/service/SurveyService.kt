@@ -124,13 +124,18 @@ class SurveyService(
                             
                         """.trimIndent()
                     )
-                }
-                else {
+                } else {
                     telegramClient.sendMessage(
                         chatId,
                         """❌ Введите имя капитана без пробелов.""".trimIndent()
                     )
                 }
+            }
+            else -> {
+                telegramClient.sendMessage(
+                    chatId,
+                    "Напишите /start чтобы начать."
+                )
             }
         }
     }

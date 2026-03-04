@@ -8,6 +8,10 @@ plugins {
 version = "0.1"
 group = "com.blacksun"
 
+tasks.test {
+    useJUnitPlatform()
+}
+
 repositories {
     mavenCentral()
 }
@@ -25,6 +29,8 @@ micronaut {
 }
 
 dependencies {
+    testImplementation("io.mockk:mockk:1.13.10")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.22")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.9.22")
     implementation("io.micronaut:micronaut-runtime")
